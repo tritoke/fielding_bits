@@ -18,3 +18,5 @@ Respectively these functions define whether to enable the red/green/blue channel
 
 ## Examples
 ![A checkerboard pattern, which has a checkerboard nested in every other square. Over all this there is a pattern of concentric circles.](https://github.com/tritoke/fielding_bits/blob/main/examples/checkerboard_mad.png)
+
+![A grid where each tile contains a load of concentric circles.](https://github.com/tritoke/fielding_bits/blob/main/examples/funky.png)
