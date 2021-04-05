@@ -28,9 +28,9 @@ fn main() -> Result<()> {
     let mut stream = writer.stream_writer();
 
     // generate the pixels
-    let fr = |x, y| (x * y) & 8 == 0;
-    let fg = |x, y| (x * y) & 8 == 0;
-    let fb = |x, y| (x * y) & 8 == 0;
+    let fr = |x, y| (x * y) & 64 != 0;
+    let fg = |x, y| (x | y) % 17 == 0;
+    let fb = |x, y| (x ^ y) & 32 == 0;
     let rows: Vec<_> = (0..WIDTH).into_par_iter().map(|y| gen_row(y, (&fr, &fg, &fb))).collect();
 
     // write the rows out to disk
