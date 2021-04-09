@@ -1,4 +1,4 @@
-# fielding btis
+# fielding bits
 A rust program for generating images like those found in this [twitter thread](https://twitter.com/aemkei/status/1378106731386040322).
 It's technically multithreaded but its not necessary, I only did it because [rayon](https://docs.rs/rayon/1.5.0/rayon/) is so easy to use.
 
